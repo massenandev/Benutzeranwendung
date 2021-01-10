@@ -1,4 +1,4 @@
-package com.supportportal.domain;
+package com.userapp.domain;
 
 import org.springframework.http.HttpStatus;
 
@@ -6,13 +6,13 @@ public class HttpResponse {
     private int httpStatusCode; //200, 201, 300, 400, 404, 500
     private HttpStatus httpStatus; //enum to each http code: HTTP_INTERNAL_SERVER_ERROR, for ex
     private String reason; //the phrases to each http status
-    private String botshaft;
+    private String message;
 
-    public HttpResponse(int httpStatusCode, HttpStatus httpStatus, String reason, String botshaft) {
+    public HttpResponse(int httpStatusCode, HttpStatus httpStatus, String reason, String message) {
         this.httpStatusCode = httpStatusCode;
         this.httpStatus = httpStatus;
         this.reason = reason;
-        this.botshaft = botshaft;
+        this.message = message;
     }
 
     public HttpResponse(){}
@@ -41,11 +41,11 @@ public class HttpResponse {
         this.reason = reason;
     }
 
-    public String getBotshaft() {
-        return botshaft;
+    public String getMessage() {
+        return message;
     }
 
-    public void setBotshaft(String botshaft) {
-        this.botshaft = botshaft;
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

@@ -8,11 +8,11 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.supportportal</groupId>
-	<artifactId>supportportal</artifactId>
+	<groupId>com.userapp</groupId>
+	<artifactId>userapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>supportportal</name>
-	<description>Support portal app</description>
+	<name>userapp</name>
+	<description>User App</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -24,6 +24,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>com.sun.mail</groupId>

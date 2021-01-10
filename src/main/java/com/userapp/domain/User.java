@@ -1,4 +1,4 @@
-package com.supportportal.domain;
+package com.userapp.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
